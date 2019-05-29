@@ -1,5 +1,5 @@
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  console.log(`Received ${message.action} from ${sender}.`)
+  console.log(`Received ${JSON.stringify(message)}.`)
 
   const { action } = message;
   if (action === 'init') sendResponse('👍');
