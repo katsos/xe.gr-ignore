@@ -1,30 +1,16 @@
-# chrome-extension-template
+# xe.gr - Ignore Ad (The missing functionality)
 
 ## Introduction
-
-This project aims to provide an easy to use boilerplate for chrome extensions, showcasing communication between its different scripts.
-
-Not all extensions will need of all scripts or all types of messaging. All code snippets are optional. Text and images should be replaced with your own.
+This extension adds an "ignore" button at the bottom of each ad, so it helps to ignore this ad permanently on current browser.
+![Sample](docs/sample_00.png)
+Not the most fancy solution, but it's gonna help when you see the same ads every day and you are searching for months.
 
 ## Installation
-
-Clone the repo:
-
-```
-git clone git@github.com:edrpls/chrome-extension-template.git name-of-your-project
-```
-
-Set git to track your own repository instead of this one:
-
-```
-git remote set-url --delete origin git@github.com:edrpls/chrome-extension-template.git # Remove old origin
-git remote set-url --add origin [YOUR REPO URL] # Add new origin
-```
 
 Install dependencies:
 
 ```
-yarn install # or npm install
+yarn install
 ```
 
 ## Usage
@@ -49,17 +35,17 @@ To load the built files into Chrome, open [chrome://extensions/](chrome://extens
 
 Enable "Developer mode" if it's not enabled yet:
 
-![Developer Mode Checkbox](assets/dev_mode.png)
+![Developer Mode Checkbox](docs/dev_mode.png)
 
 Click on "Load unpacked":
 
-![Load Unpacked Button](assets/load_unpacked.png)
+![Load Unpacked Button](docs/load_unpacked.png)
 
 Find the `dist/` directory on your system and open it.
 
 The extension should be now at the top of the page:
 
-![Extension Loaded](assets/ext_loaded.png)
+![Extension Loaded](docs/ext_loaded.png)
 
 ## Publishing
 
