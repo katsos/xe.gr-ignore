@@ -17,7 +17,7 @@ function storeIgnored(url) {
 }
 
 function getIgnored() {
-  return JSON.parse(getIgnoredJSON());
+  return JSON.parse(getIgnoredJSON()) || [];
 }
 
 function getIgnoredJSON() {
