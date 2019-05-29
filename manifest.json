@@ -3,14 +3,11 @@
     "name": "chrome-extension-template",
     "version": "0.0.1",
     "description": "Chrome extension boilerplate, replace all values!",
-    "browser_action": {
-        "default_title": "Boilerplate popup!",
-        "default_popup": "popup.html"
-    },
+
     "content_scripts": [
         {
-            "matches": ["<all_urls>"],
-            "js": ["in-content.js"]
+            "matches": ["https://www.xe.gr/property/search?*"],
+            "js": ["xe-gr-property-search.js"]
         }
     ],
     "background": {
@@ -19,6 +16,5 @@
     },
     "content_security_policy":
         "script-src 'self' 'unsafe-eval'; object-src 'self'; img-src * data: 'self' 'unsafe-eval'",
-    "offline_enabled": true,
     "permissions": ["tabs", "<all_urls>", "activeTab"]
 }

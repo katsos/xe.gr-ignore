@@ -4,33 +4,31 @@ const Crx = require('crx-webpack-plugin');
 const { version } = require('./package.json');
 
 module.exports = {
-    entry: {
-        popup: './src/js/popup.js',
-        background: './src/js/background.js',
-        'in-content': './src/js/in-content.js'
-    },
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: '[name].js'
-    },
+  entry: {
+    background: './src/js/background.js',
+    'xe-gr-property-search': './src/js/xe-gr-property-search.js'
+  },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].js'
+  },
 
-    cache: true,
-    devtool: 'eval-cheap-module-source-map',
+  cache: true,
+  devtool: 'eval-cheap-module-source-map',
 
-    module: {
-        loaders: [
-            {
-                test: /\.js?$/,
-                include: [path.resolve(__dirname, 'src')],
-                loader: 'babel-loader'
-            }
-        ]
-    },
-
-    plugins: [
-        new CopyWebpackPlugin([
-            { from: './manifest.json' },
-            { from: './src/views' }
-        ])
+  module: {
+    loaders: [
+      {
+        test: /\.js?$/,
+        include: [path.resolve(__dirname, 'src')],
+        loader: 'babel-loader'
+      }
     ]
+  },
+
+  plugins: [
+    new CopyWebpackPlugin([
+      { from: './manifest.json' },
+    ])
+  ]
 };
