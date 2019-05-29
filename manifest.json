@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "chrome-extension-template",
-    "version": "0.0.1",
-    "description": "Chrome extension boilerplate, replace all values!",
+    "name": "xe.gr-ignore",
+    "version": "0.0.0",
+    "description": "",
 
     "content_scripts": [
         {
