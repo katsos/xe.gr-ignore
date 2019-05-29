@@ -7,7 +7,8 @@
     "content_scripts": [
         {
             "matches": ["https://www.xe.gr/property/search?*"],
-            "js": ["xe-gr-property-search.js"]
+            "js": ["xe-gr-property-search.js"],
+            "run_at": "document_end"
         }
     ],
     "background": {
